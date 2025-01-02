@@ -27,7 +27,7 @@ class DriverCreationForm(UserCreationForm):
         ):
             raise forms.ValidationError(
                 "Ensure that license_number start with 3 UPPER"
-                "symbols and last 5 characters are digits"
+                " symbols and last 5 characters are digits"
             )
 
         return license_number
